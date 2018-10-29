@@ -18,19 +18,19 @@ require_once(__DIR__.'/partials/header.php');
 <main class="container">
     <h1 class="page_title">Bienvenue sur Webflix, le site dédié au cinéma et aux séries.</h1>
 
-<?php
-
-?>
-
-
     <div class="row">
         <?php
-        <!-- on affiche les catégories -->
-    foreach($categorys as $category) { ?>
-
-        <div class="col md-3">
-            
-        </div>
+        // on affiche les catégories
+        foreach($categorys as $category) { ?>
+            <div class="col-md-4">
+                <h3 class="nameCategory"><?php echo $category['name'];?></h3>
+        <?php
+        foreach($movies as $movie) { ?>
+                <h5 class="nameMovies"><?php echo '- ' .$movie['title'];?></h5>
+        <?php } ?>
+            </div>
+        <?php } ?>
+    </div>
 
 </main>
 
@@ -39,4 +39,3 @@ require_once(__DIR__.'/partials/header.php');
 // Le fichier footerer.php est inclus dans la page
 require_once(__DIR__.'/partials/footer.php');
 ?>
-

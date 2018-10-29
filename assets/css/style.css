@@ -31,3 +31,10 @@ jaune claire : #F4F9CC
     position: absolute;
     bottom: 0px;
 }
+
+.nameCategory{
+    background-color : #260B0B;
+    padding : 4px;
+    text-align: center;
+    color : #F4F9CC;
+}
