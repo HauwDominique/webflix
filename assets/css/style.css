@@ -1,0 +1,33 @@
+/* marron fonce : #260B0B 
+jaune claire : #F4F9CC
+*/
+
+/* body {
+    background-image :url("../img/background-movies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+/* } */
+
+.siteName {
+    color : #F4F9CC;
+    margin-right : 30px;
+}
+
+.bg-color {
+    background-color : #260B0B;
+}
+
+.page_title {
+    color :#F4F9CC;
+    font-size : 1.5rem;
+    text-align: center;
+    margin-top : 20px;
+}
+
+.footerBand {
+    background-color : #260B0B;
+    color : #F4F9CC;
+    padding : 10px;
+    position: absolute;
+    bottom: 0px;
+}

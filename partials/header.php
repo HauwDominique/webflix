@@ -1,8 +1,10 @@
 <?php
 
+// inclusion du fichier config (qui contient les variables globales au site)
+require_once(__DIR__.'/../config/config.php');
+
   // inclusion du fichier database
   require_once(__DIR__.'/../config/database.php');
-
 
 ?>
 
@@ -17,12 +19,13 @@
     <title>Accueil Webflix</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-color">
+    <h3 class="siteName">Webflix</h3>
   <a class="navbar-brand" href="#">Accueil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
