@@ -3,9 +3,9 @@
 On veut créer un nouveau Netflix
 
 Projet :
-- créer un dépôt Github
-- Faire le lien entre le dépôt local
-- Penser à la BDD
+- créer un dépôt Github -- OK FAIT
+- Faire le lien entre le dépôt local -- OK FAIT
+- Penser à la BDD -- OK FAIT
 
 Pages :
 
@@ -34,6 +34,6 @@ Pages :
 Structure
 
 BDD :
-- Movie : id, title, description,video_link, cover, released_at, category_id
-- Category : id, name
+- Movie : id, title, description, video_link, cover, released_at, category_id -- OK FAIT
+- Category : id, name -- OK FAIT
 - User : id, username, email, password, token, token_expiration
