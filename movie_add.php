@@ -6,15 +6,15 @@ require_once(__DIR__.'/partials/header.php');
 // on déclare les variables utiles à chaque champs.
 $title = null;
 $description = null;
-$category_id = null;
+$category = null;
 $released_at = null;
 $cover = null;
 $video_link = null;
 
-var_dump($_POST);
+// var_dump($_POST);
 
 		// $message = null;
-		if (!empty($_POST)) { // $post Récupére les informations saisies dans le formulaire
+        if (!empty($_POST)) { // $post Récupére les informations saisies dans le formulaire
 		    $title = $_POST['title']; 
             $description = $_POST['description'];
             $category = $_POST['category'];
@@ -47,10 +47,10 @@ var_dump($_POST);
             }
 
 
-                // Vérifier l'image
-            if ($cover['error'] === 4) {
-                $errors['cover'] = 'L\'image n\'est pas valide';
-            }
+            // Vérifier l'image
+            // if ($cover['error'] === 4) {
+            //     $errors['cover'] = 'L\'image n\'est pas valide';
+            // }
 
 
             // upload de l'image
@@ -74,10 +74,32 @@ var_dump($_POST);
                     $errors['cover'] = 'l\image est trop lourde';
                 }
 
-                // if(!isset($errors['cover'])) {
-                //     move_uploaded_file($file, __DIR__.'/assets/'.$fileName);
-                //     //on déplace le fichier upload où on le souhaite
-                // }
+                if(!isset($errors['cover'])) {
+                    move_uploaded_file($file, __DIR__.'/assets/'.$fileName);
+                    //on déplace le fichier upload où on le souhaite
+                }
+            // }
+
+                // S'il n'y a pas d'erreurs dans le formulaire
+            if (empty($errors)) {
+                $query = $db->prepare('
+                INSERT INTO movie (`title`, `description`, `video_link`, `cover`, `released_at`, `category_id`) 
+                VALUES (:title, :description, :video_link, :cover, :released_at, :category)
+                ');
+                $query->bindValue(':title', $title, PDO::PARAM_STR);
+                $query->bindValue(':description', $description, PDO::PARAM_STR);
+                $query->bindValue(':video_link', $video_link, PDO::PARAM_STR);
+                $query->bindValue(':cover', $fileName, PDO::PARAM_STR);
+                $query->bindValue(':released_at', $released_at, PDO::PARAM_STR);
+                $query->bindValue(':category', $category, PDO::PARAM_STR);
+
+    
+                if ($query->execute()) { // On insère le film dans la BDD
+                    $success = true;
+                    // Envoyer un mail ?
+                    // Logger la création du film
+                }
+            }
 
         }
 
@@ -118,9 +140,9 @@ var_dump($_POST);
                 <label for="category" class='label_title'>Catégorie</label>
                 <select class="form-control col-6<?= isset($errors['category']) ? 'is-invalid' : '';?>" name="category">
                     <option value="">Choisissez la catégorie</option>
-                    <option value="science fiction">Science fiction</option>
-                    <option value="comedie">Comédie</option>
-                    <option value="action">Action</option>
+                    <option  <?php echo ($category === '1') ? 'selected' : ''; ?> value="1">Science fiction</option>
+                    <option  <?php echo ($category === '2') ? 'selected' : ''; ?> value="2">Comédie</option>
+                    <option  <?php echo ($category === '3') ? 'selected' : ''; ?> value="3">Action</option>
                 </select>
                 <div class="invalid-feedback">
                     <?php echo (isset($errors['category'])) ? $errors['category']: ''; ?>
