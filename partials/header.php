@@ -24,19 +24,23 @@ require_once(__DIR__.'/../config/config.php');
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-color">
+<nav class="navbar navbar-expand-lg navbar-dark bg-color section-nav">
     <h3 class="siteName">Webflix</h3>
-  <a class="navbar-brand" href="#">Accueil</a>
+  <!-- <a class="navbar-brand" href="#">Accueil</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+    <li class="nav-item <?php echo $currentPageUrl === 'index' ? 'active' : ''; ?>">
+            <a class="nav-link" href="index.php">Accueil</a>
+          </li>
+
+      <!-- <li class="nav-item active">
         <a class="nav-link" href="#">Voir un film <span class="sr-only">(current)</span></a>
-      </li>
+      </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#">Sélection aléatoire</a>
+        <a class="nav-link" href="movies_single.php">Voir un film</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Gérer mes film</a>

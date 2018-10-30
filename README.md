@@ -10,7 +10,7 @@ Projet :
 Pages :
 
 ---PARTIE 1---
-- Accueil (index.php) -> Liste de films triés par cagégorie
+- Accueil (index.php) -> Liste de films triés par cagégorie --OK
 
 - Voir un film (movie_single.php?id=4) -> On peut voir un film
 - Ajouter un film (movie_add.php) -> On peut ajouter un film dans la BDD
