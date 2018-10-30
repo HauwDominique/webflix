@@ -5,11 +5,11 @@ jaune claire : #F4F9CC
 /* body {
     background-image :url("../img/background-movies.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */
-/* } */
+    background-size: cover;
+} */
 
 .section-nav {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .siteName {
@@ -31,6 +31,44 @@ jaune claire : #F4F9CC
 .released_date_span{
     font-weight: bold;
 }
+
+/* la page accueil */
+
+.col-md-4 {
+    background-color : white;
+    padding : 20px;
+    border
+}
+
+/* la page movie single */
+
+.row_single_movie {
+    padding : 20px;
+    border : solid black 1px;
+    background-color : #FFFFFF;
+}
+
+.title_movie {
+    color : #260B0B;
+    border-bottom : solid 1px #260B0B;
+    margin-bottom: 25px;
+}
+
+/* la page movie_add */
+
+.label_title {
+    margin-top : 10px;
+}
+
+.btn-bkg-color{
+    background-color : #260B0B;
+    color : #F4F9CC;
+    margin-top : 20px;
+}
+
+
+
+/* Le footer______________________________ */
 
 .footerBand {
     background-color : #260B0B;

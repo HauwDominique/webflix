@@ -39,11 +39,11 @@ require_once(__DIR__.'/../config/config.php');
       <!-- <li class="nav-item active">
         <a class="nav-link" href="#">Voir un film <span class="sr-only">(current)</span></a>
       </li> -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="movies_single.php">Voir un film</a>
-      </li>
+      </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#">Gérer mes film</a>
+        <a class="nav-link" href="movie_add.php">Gérer mes film</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Se connecter</a>

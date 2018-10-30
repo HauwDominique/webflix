@@ -20,14 +20,14 @@ if($movie === false){
     // on pourrait aussi rediriger l'utilisateur vers la liste des pizzas
     // header('location: pizza_list.php);
     require_once(__DIR__.'/partials/header.php'); ?>
-    <h1>404. Redirection dans 5 secondes...</h1>
-    <script>
-        setTimeout(function(){
-            window.location = 'index.php';
-        }, 5000);
-    </script>
+<h1>404. Redirection dans 5 secondes...</h1>
+<script>
+    setTimeout(function () {
+        window.location = 'index.php';
+    }, 5000);
+</script>
 
-        <?php require_once(__DIR__.'/partials/footer.php');
+<?php require_once(__DIR__.'/partials/footer.php');
     die();
 }
 
@@ -37,21 +37,28 @@ require_once(__DIR__.'/partials/header.php');
 
 <main class="container">
 
-<div class="row">
+    <div class="row row_single_movie">
 
-<div class="col-md-6">
-<h3 class="title_movie"><?php echo $movie['title'];?></h3>
-<p class="description_movie"><?php echo $movie['description'];?></p>
-<p class="released_date"><span class = "released_date_span">Date de sortie :</span> <?php echo $movie['released_at'];?></p>
-</div>
+        <div class="col-md-9">
+            <h3 class="title_movie">
+                <?php echo $movie['title'];?>
+            </h3>
+            <p class="description_movie">
+                <?php echo $movie['description'];?>
+            </p>
+            <p class="released_date"><span class="released_date_span">Date de sortie :</span>
+                <?php echo $movie['released_at'];?>
+            </p>
+        </div>
 
-<div class="col-md-6">
-    <img src="assets/<?php echo $movie['cover'];?>" alt=<?php $movie['title'];?> class="img-fluid">
-</div>
-
-
-</div>
-
+        <div class="col-md-3">
+            <img src="assets/<?php echo $movie['cover'];?>" alt=<?php $movie['title'];?> class="img-fluid">
+        </div>
+    </div>
 
 </main>
 
+<?php
+// Le fichier footerer.php est inclus dans la page
+require_once(__DIR__.'/partials/footer.php');
+?>

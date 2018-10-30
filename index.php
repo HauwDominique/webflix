@@ -15,7 +15,7 @@ require_once(__DIR__.'/partials/header.php');
     ?>
 
 <main class="container">
-    <h1 class="page_title">Bienvenue sur Webflix, le site dédié au cinéma et aux séries.</h1>
+    <h1 class="page_title">Bienvenue sur Webflix, le site dédié au cinéma et aux séries.</h1><br>
 
     <div class="row">
         <?php
