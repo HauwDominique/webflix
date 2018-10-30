@@ -20,6 +20,12 @@ $query->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre ell
 $query->execute(); //Execute la requête
 $movie = $query->fetch();
 
+$delete=$db->prepare('delete from movie where id=$id');
+$delete->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre elle (:id devient $id)
+$delete->execute(); //Execute la requête
+
+
+
 ?>
 
 <main class="container">
