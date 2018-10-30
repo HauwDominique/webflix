@@ -28,8 +28,19 @@ require_once(__DIR__.'/partials/header.php');
             <?php if($movie['category_id'] == $category['id']) { ?>
               <h5> <?php echo $movie['title'];?></h5>
               <img src=" <?php echo 'assets/'.$movie['cover'];?>">
-               <a href="movie_single.php?id=<?php echo $movie['id'];?>" 
-            class="btn btn-danger">Commandez</a>
+            
+              <!-- bouton pour commander -->
+              <a href="movie_single.php?id=<?php echo $movie['id'];?>" 
+            class="btn btn-color-command">Commandez</a>
+
+           <!-- bouton pour modifier -->
+            <a href="movie_edit.php?id=<?php echo $movie['id'];?>" 
+            class="btn btn-color-modif">Modifiez</a>
+
+            <!-- bouton pour supprimer -->
+            <a href="movie_delete.php?id=<?php echo $movie['id'];?>" 
+            class="btn btn-danger">Supprimez</a>
+
                 <?php } ?>
            
 

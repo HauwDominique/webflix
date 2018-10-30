@@ -22,7 +22,7 @@ jaune claire : #F4F9CC
 }
 
 .page_title {
-    color :#F4F9CC;
+    color:black;
     font-size : 1.5rem;
     text-align: center;
     margin-top : 20px;
@@ -38,6 +38,17 @@ jaune claire : #F4F9CC
     background-color : white;
     padding : 20px;
     border
+}
+
+.btn-color-command{
+    background-color : green;
+    color : #FFFFFF;
+}
+
+.btn-color-modif{
+    background-color : blue;
+    color : #FFFFFF;
+
 }
 
 /* la page movie single */

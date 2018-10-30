@@ -9,11 +9,11 @@ Projet :
 
 Pages :
 
----PARTIE 1---
+---PARTIE 1--- OK
 - Accueil (index.php) -> Liste de films triés par cagégorie --OK
 
 - Voir un film (movie_single.php?id=4) -> On peut voir un film --OK
-- Ajouter un film (movie_add.php) -> On peut ajouter un film dans la BDD
+- Ajouter un film (movie_add.php) -> On peut ajouter un film dans la BDD --OK
 
 ---PARTIE 2 ---
 - Modifier un film (movie_edit.php?id=4) -> On peut modifier un film dans la BDD
