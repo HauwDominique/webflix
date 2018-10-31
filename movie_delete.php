@@ -8,6 +8,7 @@ $movies = $query2->fetchall();
 
 // récupérer l'ID du film dans l'URL
 $id = $_GET['id'];
+var_dump($id);
 
 // inclure la base de données
 require_once(__DIR__.'/config/database.php');
@@ -20,11 +21,9 @@ $query->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre ell
 $query->execute(); //Execute la requête
 $movie = $query->fetch();
 
-$delete=$db->prepare('delete from movie where id=$id');
+$delete=$db->prepare('DELETE FROM movie WHERE id = :id');
 $delete->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre elle (:id devient $id)
 $delete->execute(); //Execute la requête
-
-
 
 ?>
 
@@ -48,7 +47,5 @@ $delete->execute(); //Execute la requête
         <a href="#movie_delete.php?id=<?php echo $movie['id'];?>" class="btn btn-danger">Souhaitez-vous vraiment supprimer le film ?</a>
 
     </div>
-
-
 
 </main>

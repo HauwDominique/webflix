@@ -35,14 +35,14 @@ require_once(__DIR__.'/partials/header.php');
 
             <div class="bouton_div">
             <!-- bouton pour commander -->
-            <a href="movie_single.php?id=<?php echo $movie['id'];?>" class="btn btn-color-command">Commandez</a>
+            <a href="movie_single.php?id=<?php echo $movie['id'];?>" class="btn btn-color-command">Voir un film</a>
 
             <!-- <div class="boutons"> -->
             <!-- bouton pour modifier -->
-            <a href="movie_edit.php?id=<?php echo $movie['id'];?>" class="btn btn-color-modif">Modifiez</a>
+            <a href="movie_edit.php?id=<?php echo $movie['id'];?>" class="btn btn-color-modif">Modifier</a>
 
             <!-- bouton pour supprimer -->
-            <a href="movie_delete.php?id=<?php echo $movie['id'];?>" class="btn btn-color-delete">Supprimez</a>
+            <a href="movie_delete.php?id=<?php echo $movie['id'];?>" class="btn btn-color-delete">Supprimer</a>
                     
             </div>
             </div>

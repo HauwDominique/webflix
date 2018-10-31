@@ -103,7 +103,6 @@ $video_link = $movie['video_link'];
                     // Logger la création du film
                 }
             }
-
         }
 
 ?>
