@@ -9,7 +9,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : 0;
     $query->bindValue(':id', $id, PDO::PARAM_STR);
     $query->execute();
     $movie = $query->fetch();
-    var_dump($movie);
+    // var_dump($movie);
 
 
 // Le fichier header.php est inclus dans la page

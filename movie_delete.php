@@ -9,7 +9,7 @@ $movies = $query2->fetchall();
 
 // récupérer l'ID du film dans l'URL
 $id = $_GET['id'];
-var_dump($id);
+// var_dump($id);
 
 // inclure la base de données
 require_once(__DIR__.'/config/database.php');

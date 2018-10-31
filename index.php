@@ -35,7 +35,7 @@ require_once(__DIR__.'/partials/header.php');
 
             <div class="bouton_div">
             <!-- bouton pour commander -->
-            <a href="movie_single.php?id=<?php echo $movie['id'];?>" class="btn btn-color-command">Voir un film</a>
+            <a href="movie_single.php?id=<?php echo $movie['id'];?>" class="btn btn-color-command">Voir le film</a>
 
             <!-- <div class="boutons"> -->
             <!-- bouton pour modifier -->

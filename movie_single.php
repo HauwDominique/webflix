@@ -14,6 +14,8 @@ $query->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre ell
 $query->execute(); //Execute la requête
 $movie = $query->fetch();
 
+// var_dump($movie);
+
 // renvoyer une 404 si le film n'existe pas
 if($movie === false){
     http_response_code(404);
@@ -56,9 +58,15 @@ require_once(__DIR__.'/partials/header.php');
         </div>
     </div>
 
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="<?php echo $movie['video_link']?>" allowfullscreen></iframe>
+</div>
+
 </main>
 
 <?php
 // Le fichier footerer.php est inclus dans la page
 require_once(__DIR__.'/partials/footer.php');
 ?>
+
+<iframe width="1103" height="827" src="https://www.youtube.com/embed/eqQNgdRGg-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

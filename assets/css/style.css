@@ -3,9 +3,9 @@ jaune claire : #F4F9CC
 */
 
 body {
-    /* background-image :url("../img/background-movies.jpg");
+    background-image :url("../img/background-movies.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */ */
+    background-size: cover;
 }
 
 .section-nav {
@@ -22,7 +22,7 @@ body {
 }
 
 .page_title {
-    color:black;
+    color:#F4F9CC;
     font-size : 1.5rem;
     text-align: center;
     margin-top : 20px;
@@ -121,6 +121,15 @@ form {
 .row_single_movieDeleteConfirm{
     opacity : 0.5;
     background-color : whitesmoke;
+}
+
+/* la page de sélection aléatoire (movie_random */
+
+.affiche-random {
+    margin : 0px 14px; 
+    border : solid 2px #260B0B;
+    background-color: #FFFFFF;
+
 }
 
 

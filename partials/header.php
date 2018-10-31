@@ -1,7 +1,7 @@
 <?php
 
-// inclusion du fichier config (qui contient les variables globales au site)
-require_once(__DIR__.'/../config/config.php');
+  // inclusion du fichier config (qui contient les variables globales au site)
+  require_once(__DIR__.'/../config/config.php');
 
   // inclusion du fichier database
   require_once(__DIR__.'/../config/database.php');
@@ -46,7 +46,7 @@ require_once(__DIR__.'/../config/config.php');
         <a class="nav-link" href="movie_add.php">Ajouter un film</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Se connecter</a>
+        <a class="nav-link disabled" href="movie_rando.php">Selection aléatoire</a>
       </li>
     </ul>
   </div>

@@ -18,7 +18,7 @@ Pages :
 ---PARTIE 2 ---
 - Modifier un film (movie_edit.php?id=4) -> On peut modifier un film dans la BDD --OK
 - Supprimer un film (movie_delete.php?id=4) -> On peut supprimer un film dans la BDD. On doit avoir un bouton supprimer sur la liste des films, on clique, on supprime le film en question et on revient sur la liste des films --OK
-- Film rando (movie_random.php) -> On affiche 4 films de manière aléatoire
+- Film rando (movie_random.php) -> On affiche 4 films de manière aléatoire --OK
 
 --- PARTIE 3 ---
 - Inscription (register.php) -> Formulaire d'inscription (email, username, mot de passe, confirmer le mot de passe)
