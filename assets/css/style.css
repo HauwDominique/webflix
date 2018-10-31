@@ -116,6 +116,13 @@ form {
     margin-top : 20px;
 }
 
+/* la page de confirmation de suppressionn (pageMovieDeleteConfirm) */
+
+.row_single_movieDeleteConfirm{
+    opacity : 0.5;
+    background-color : whitesmoke;
+}
+
 
 
 /* Le footer______________________________ */

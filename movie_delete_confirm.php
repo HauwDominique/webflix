@@ -28,14 +28,14 @@ $title=$movie['title'];
 var_dump($title);
 $delete=$db->prepare('DELETE FROM movie WHERE id = :id');
 $delete->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre elle (:id devient $id)
-// $delete->execute(); //Execute la requête
+$delete->execute(); //Execute la requête
 ?>
 
 <main class="container">
 
-    <h1 class="page_title">Suppression du film</h1><br>
+    <h1 class="page_title">Votre film a bien été supprimé</h1><br>
 
-    <div class="row row_single_movie">
+    <div class="row row_single_movieDeleteConfirm">
 
         <div class="col-md-9">
             <h3 class="title_movie">
@@ -47,9 +47,8 @@ $delete->bindvalue(':id', $id, PDO::PARAM_INT); //Liaison des 2 valeurs entre el
             <img src="assets/<?php echo $movie['cover'];?>" alt=<?php $movie['title'];?> class="img-fluid">
         </div>
 
+    </div><br>
         <!-- bouton pour supprimer -->
-        <a href="movie_delete_confirm.php?id=<?php echo $movie['id'];?>" class="btn btn-danger">Souhaitez-vous vraiment supprimer le film ?</a>
-
-    </div>
+        <a href="index.php?id=<?php echo $movie['id'];?>" class="btn btn-danger">retour à  la liste des films</a>
 
 </main>
