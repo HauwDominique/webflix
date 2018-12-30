@@ -1,6 +1,6 @@
-# webflix
+# webflix en PHP uniquement (pas de Symfony)
 
-On veut créer un nouveau Netflix
+On veut créer un nouveau Netflix pour le web. 
 
 Projet :
 - créer un dépôt Github -- OK FAIT
