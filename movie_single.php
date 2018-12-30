@@ -68,5 +68,3 @@ require_once(__DIR__.'/partials/header.php');
 // Le fichier footerer.php est inclus dans la page
 require_once(__DIR__.'/partials/footer.php');
 ?>
-
-<iframe width="840" height="480" src="https://www.youtube.com/embed/nMaGGmE-rI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

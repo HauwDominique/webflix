@@ -83,7 +83,20 @@ h5 {
 
 img {
     height : 350px;
+    margin : 8px 0px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
+
+img:hover {
+	-webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    border-radius : 15px;
+    box-shadow: black 0px 0px 7px  3px;
+}
+
 
 /* la page movie single */
 

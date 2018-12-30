@@ -31,7 +31,9 @@ require_once(__DIR__.'/partials/header.php');
                 <h5>
                     <?php echo $movie['title'];?>
                 </h5>
-                <img src=" <?php echo 'assets/'.$movie['cover'];?>">
+                <a href="movie_single.php?id=<?php echo $movie['id'];?>" class="">               
+                    <img src=" <?php echo 'assets/'.$movie['cover'];?>">
+                </a>
 
             <div class="bouton_div">
             <!-- bouton pour commander -->

@@ -10,11 +10,9 @@
 
 <body>
 
-
-
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark footerBand">
             Pour nous contacter : Tél : 03.21.00.00.00
-</nav>
+    </nav>
 
 
     <!-- Bootstrap core JavaScript
